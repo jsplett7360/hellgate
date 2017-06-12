@@ -1,8 +1,8 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-      <h1 class="text-center">HellGate Community</h1>
-      <p class="text-center">Welcome to the HellGate community.  Users must fill out a profile in order to be visit in the community.</p>
+      <h1 class="text-center">Bottomless Community</h1>
+      <p class="text-center">Welcome to the Bottomless community.  Users must fill out a profile in order to be visit in the community.</p>
       <ul class="list-unstyled">
         <% @users.each do |user| %>
           <% if user.profile %>
@@ -22,7 +22,7 @@
                     <p>
                       <%= user.profile.job_title %>
                       <% if user.plan_id == 2 %>
-                        <span class="label label-danger">Pro</span>
+                        <span class="label label-danger">Organizer</span>
                       <% end %>
                     </p>
                   </div>
