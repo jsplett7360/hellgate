@@ -45,6 +45,12 @@ gem 'figaro', '1.1.1'
 # Use Paperflip for image upload
 gem 'paperclip', '4.3.6'
 
+# Bundler install files
+source 'https://rubygems.org'
+gem 'nokogiri'
+gem 'rack', '~> 2.0.1'
+gem 'rspec'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
@@ -61,7 +67,9 @@ group :development do
 end
 group :production do
   # Use the PostgreSQL gem for Heroku production servers
-  gem 'pg', '0.18.4'
+  gem 'pg', '0.21.0'
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :jruby]
+
+ruby '2.3.0'
