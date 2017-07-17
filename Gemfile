@@ -45,6 +45,9 @@ gem 'figaro', '1.1.1'
 # Use Paperflip for image upload
 gem 'paperclip', '4.3.6'
 
+# Use for bootstrap
+gem 'formtastic', '3.1.5'
+
 # Bundler install files
 source 'https://rubygems.org'
 gem 'nokogiri'

@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT hellowebapp.wsgi:applicationherok
+web: play run --http.port=$PORT $PLAY_OPTS
